@@ -1,0 +1,230 @@
+.imageSection {
+    height: 80rem;
+    background-color: rgb(118, 117, 117);
+    position: relative;
+
+    &--stoke2 {
+        // background-image: url(../../img/stoke2.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/stoke2.jpg);
+        height: 90rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        color: white;
+    }
+
+    &--stokeOven {
+                // background-image: url(../../img/stoke2.jpg);
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/stokeovenshot.jpg);
+                height: 90rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                background-position: center;
+                color: white;
+    }
+
+    &--stokeAerial {
+        // background-image: url(../../img/stoke2.jpg);  img/Stoke Aerial.jpg
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/Stoke Aerial.jpg');
+        height: 90rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        color: white;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__textSection {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 2.7rem;
+
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 1.5rem;
+        font-size: 2.7rem;
+        font-weight: 300;
+        
+        color: white;
+
+        p {
+            width: 55%;
+            margin: auto;
+        }
+        h2 {
+            margin: auto;
+            margin-bottom: 2.5rem;
+            font-size: 3rem;
+            font-weight: 500;
+            color: white;
+            width: 35%;
+            
+        }
+    }
+}
+
+@media all and (max-width: 1550px) {
+    .imageSection {
+
+        p {
+            width: 65%;
+        }
+
+        h2 {
+            width: 30%;
+        }
+    
+    }
+}
+
+@media all and (max-width: 1175px) {
+    .imageSection__textSection {
+        p {
+            // width: 65%;
+        }
+
+        h2 {
+            width: 35%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 1115px) {
+    .imageSection__textSection {
+        p {
+            // width: 65%;
+        }
+
+        h2 {
+            width: 40%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 980px) {
+    .imageSection__textSection {
+        p {
+            // width: 65%;
+        }
+
+        h2 {
+            width: 45%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 880px) {
+    .imageSection__textSection {
+        p {
+            // width: 65%;
+            font-size: 2.3rem;
+        }
+
+        h2 {
+            width: 50%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 800px) {
+    .imageSection__textSection {
+        p {
+            // width: 65%;
+        }
+
+        h2 {
+            width: 55%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 730px) {
+    .imageSection__textSection {
+        p {
+            width: 70%;
+        }
+
+        h2 {
+            width: 60%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 675px) {
+    .imageSection__textSection {
+        p {
+            width: 75%;
+        }
+
+        h2 {
+            width: 65%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 630px) {
+    .imageSection__textSection {
+        p {
+            width: 80%;
+        }
+
+        h2 {
+            width: 70%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 590px) {
+    .imageSection__textSection {
+        p {
+            width: 85%;
+        }
+
+        h2 {
+            width: 75%;
+        }
+    
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .imageSection__textSection {
+        p {
+            width: 90%;
+            font-size: 2.1rem;
+        }
+
+        h2 {
+            width: 86%;
+        }
+    }
+}

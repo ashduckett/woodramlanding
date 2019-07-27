@@ -1,0 +1,131 @@
+.enquireMobileContainer {
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.header {
+    padding-top: 50px;
+
+    &__blurred-underlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    &__unblurred-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-position: top;
+        background-size: cover;
+    }
+
+    &__logo-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+
+        
+    }
+    
+    &__logo {
+        background-size: 100% 100%;
+        // height: 2.7rem;
+        background-image: url('../img/logoWhite.svg');
+        // width: 80%;
+        background-repeat: no-repeat;
+
+        img {
+            height: 26px;
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    &__heading-primary {
+        color: #fff;
+        font-size: 7rem;
+        padding: 2rem;
+        font-family: futuraLight;
+    }
+
+    &__heading-sub {
+        color: #fff;
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin: 2rem 0;
+    }
+}
+
+
+
+@keyframes swipe {
+    0% { top: 0; opacity: 1}
+    100% { top: -100vh; opacity: 0;}
+}
+
+// This stuff should be a component.
+.swiper {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+
+.swiped {
+    animation-name: swipe;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.loadingLogo {
+    display: block;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    // top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes changeTreeColour {
+    0% {
+        fill: rgb(123, 123, 123);
+    }
+    100% {
+        fill: white;
+    }
+}
+
+.cls-1, .cls-2 {
+    fill: rgb(123, 123, 123);
+    animation-name: changeTreeColour;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+

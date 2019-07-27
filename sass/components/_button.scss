@@ -1,0 +1,22 @@
+.btn {
+    &:link,
+    &:visited {
+        position: relative;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color:  #1ad069;
+        padding: 1.4rem;
+        color: white;
+        border-radius: 10px;
+        font-weight: 300;
+    }
+
+    &--mobile-enquire {
+        position: absolute !important;
+        margin: 0 !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+}
+

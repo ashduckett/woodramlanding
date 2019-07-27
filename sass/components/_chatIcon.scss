@@ -1,0 +1,40 @@
+.chaport-launcher-chat-icon {
+    background-image: url(../img/chatLight.png) !important;
+    height: 60px !important;  
+    width: 60px !important;
+    background-size: cover !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1000000 !important;
+}
+
+.chaport-launcher-chat-icon:hover {
+    background-image: url(../img/chatDark.png) !important;
+}
+
+.chaport-launcher-button {
+    background-color: transparent !important;
+}
+
+.chaport-launcher-close-icon {
+    background-image: url(../img/crossLight.png) !important;
+    height: 60px !important;  
+    width: 60px !important;
+    background-size: cover !important;
+    top: 0 !important;
+    left: 0 !important;
+    // z-index: 10000000 !important;
+}
+
+.chaport-launcher-close-icon:hover {
+    background-image: url(../img/crossDark.png) !important;
+
+}
+
+@media all and (max-width: 600px) {
+    .chaport-container {
+    //    display: none;
+    }
+}
+
+

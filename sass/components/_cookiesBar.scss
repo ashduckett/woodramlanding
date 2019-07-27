@@ -1,0 +1,64 @@
+.cookiesBar {
+    transition: height 0.1s linear;
+    overflow: hidden;
+
+    &.closed {
+      height: 0px;
+    }
+
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.91);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+
+  .cookiesBarText {
+    font-size: 1.3rem;
+  }
+
+    .closeContainer {
+      width: 40px;
+    }
+
+    .close {
+        // position: absolute;
+        // right: 32px;
+        // top: 32px;
+        // width: 32px;
+        // height: 32px;
+        // opacity: 0.3;
+        height: 18px;
+        // background-color: green;
+        width: 18px;
+        position: relative;
+        display: block;
+        align-items: center;
+        margin: auto;
+        transform: translateY(-3px);
+        
+      }
+      .close:hover {
+        opacity: 1;
+      }
+      .close:before, .close:after {
+        position: absolute;
+        // left: 15px;
+        left: 50%;
+        content: ' ';
+        height: 24px;
+        width: 2px;
+        background-color: #fff;
+      }
+      .close:before {
+        transform: rotate(45deg);
+      }
+      .close:after {
+        transform: rotate(-45deg);
+      }
+
+}

@@ -1,0 +1,317 @@
+.nav {
+
+    &__enquireButtonAndHamburger {
+        display: flex;
+        align-items: center;
+    }
+
+
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    &__top-bar {
+        width: 100%;
+        transition: all 1s;
+        padding: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &.active {
+        // background-color: white;
+        // opacity: 1;
+    
+        .nav__top-bar {
+            // width: 100%;
+            // transition: all 1s;
+            // background: white;
+            opacity: 1;
+    
+            
+        }
+    
+    }
+
+    .desktopMenu {
+        display: flex;
+        position: absolute;
+        background-color: rgba(249, 249, 249, 1);
+        width: 100%;
+        left: 0;
+        color: black;
+        align-items: center;
+        flex-direction: column;
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .5s;
+
+        &__top {
+            width: 100%;
+            background: white;
+            padding: calc(4rem + 15px);
+            border-bottom: #e6e6e6 1px solid;
+        }
+
+        &__header {
+            margin: 4.5rem 0;
+            font-size: 2.5rem;
+        }
+        
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            display: flex;
+        }
+    }
+
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        // width: 100%;
+        // justify-content: flex-end;
+        margin-bottom: 4.5rem;
+        font-size: 1.5rem;
+
+        &.desktopMenu {
+            
+        }
+
+        li {
+            // color: white;
+            display: inline-block;
+            
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            &:not(:last-child) {
+                margin-right: 5rem;
+
+            }
+        }
+    }
+
+    &--hasScrolled {
+        background-color: black;
+    }
+}
+
+
+.hamburger {
+    // margin-right: 1.5rem;
+    // display: none;
+    z-index: 2;
+    cursor: pointer;
+    // opacity: 1;
+    // position: absolute;
+    // left: 100%;
+    // transform: translateX(-50%);
+    // top: 0;
+
+    &.isActive {
+        .line {
+            background-color: rgba(0, 0, 0, 1);
+        }
+    }
+
+    .line {
+        width: 40px;
+        height: 2px;
+        display: block;
+        background-color: white;
+        border-radius: 10px;
+        margin: 9px auto;
+        transition: all .3s ease-in-out;
+    }
+
+    &.isActive {
+
+        .line:nth-child(1) {
+            transform: translateY(11px) rotate(45deg);
+        }
+
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .line:nth-child(3) {
+            transform: translateY(-11px) rotate(-45deg);
+        }
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .hamburger {
+        // display: block !important;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    .hamburger {
+        // display: none !important;
+    }
+
+    .mobileMenu {
+        display: none !important;
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+    .desktopMenu__header {
+        display: none;
+    }
+    
+    .nav__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* margin-bottom: 4.5rem; */
+        font-size: 1.5rem;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0
+    }
+    
+    .nav__list a {
+        color: black;
+        text-decoration: none;
+        /* padding: 1.5rem; */
+        display: block;
+        font-weight: 600;
+        /* border-bottom: 1px solid black; */
+        /* margin-left: 2rem;
+    }
+    
+    .nav__list li {
+        /* display: inline-block; */
+        display: block;
+            padding: 1.5rem 0;
+            border-bottom: solid #d5d5d5 1px;
+            margin-left: 2rem;
+            margin-right: 2rem;
+    }
+    
+    .nav__list li:not(:last-child) {
+        margin-right: unset;
+    }
+
+    .nav .desktopMenu {
+        height: 100vh;
+    }
+}
+
+// This can probably go
+ul.mobileMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    transition: opacity .3s;
+
+    li {
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &.active {
+        opacity: 1;
+        pointer-events: all; 
+        z-index: 1;
+    }
+}
+//
+
+.nav {
+    transition: all .5s linear;
+
+    &__tel {
+        transition: all .5s linear;
+    }
+
+    .header__logo {
+        transition: all .5s linear;
+    }
+
+}
+a[href^=tel] {
+    text-decoration: none;
+    color: white !important;
+    transition: opacity 0.7s;
+}
+
+a[href^=tel]:hover {
+    opacity: 0.5;
+}
+
+.has-scrolled {
+
+
+
+    .btn {
+        // color: black !important;
+    }
+
+    a[href^=tel] {
+        // color: black !important;
+        color: #09c !important;
+    }
+
+    background-color: white;
+
+    .nav__top-bar {
+        padding: 1rem 4rem;
+    }
+
+    .nav__tel {
+        text-decoration: none;
+        color: black !important;
+        
+    }
+
+    .header__logo {
+        // background-image: url('../img/WoodramLogo Black.svg');
+        background-image: url('../img/logoBlack.svg');
+        background-size: 100% 100%;
+        // height: 2rem;
+        //content: url(../../img/WoodramLogoBlack.svg);
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%);
+    }
+
+    .header__logo--mobile {
+        background-image: url('../img/logoBlack.svg');
+        background-size: 100% 100%;
+        // background-image: url('../img/Woodram Tree Logo.svg');
+
+        
+    }
+}

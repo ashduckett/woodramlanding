@@ -1,0 +1,73 @@
+@import "abstract/variables";
+@import "base/base";
+@import "base/typography";
+@import "components/imageWithTextSegment";
+@import "components/centeredTextStrip";
+@import "components/cookiesBar";
+@import "components/tripleImageBox";
+@import "components/nav";
+@import "components/contactForm";
+@import "components/iconBanner";
+@import "components/button";
+@import "components/slantyTextWithImage";
+@import "components/transition";
+@import "components/headerArrow";
+@import "components/footer";
+@import "components/chatIcon";
+@import "layout/header";
+@import "pages/landing";
+@import "base/animate";
+
+
+.para1 {
+  margin-bottom: 2.5rem;
+}
+
+.header {
+  transition: padding 0.1s linear;
+}
+.animatable {
+  transition: translate 1s;
+}
+
+.animIn {
+  transform: translateY(50px);
+ 
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; 
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// @-webkit-keyframes moveUp {
+//   0% {
+//     -webkit-transform: translateY(50px);
+//     -webkit-opacity: 0;
+//   }
+
+//   100% {
+//     -webkit-transform: translateY(0);
+//     -webkit-opacity: 1;
+//   }
+// }
+
+.iconBanner__container {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.slideIn {
+  animation-name: moveUp;
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+

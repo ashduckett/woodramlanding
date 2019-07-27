@@ -1,0 +1,126 @@
+/* Browser reset - normalize.css is not required anymore */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    //font-family: inherit;
+}
+
+html {
+    /* Override the root font size so rems can be used more easily. 62.5% is what 10px is as a % of 16px */
+    font-size: 62.5%;
+}
+
+body {
+    /* font-size: 16px; */
+    /* Also set font-family, font-weight, line-height and font colour here. */
+    box-sizing: border-box;
+  //   font-family: 'Gothic A1', sans-serif;
+
+    font-family: futuraBook2;
+    overflow-x: hidden;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+textarea, select, input, button { 
+    outline: none; 
+    background-color: white;
+    
+}
+// -webkit-autofill: {-webkit-box-shadow:0 0 0 500px white inset; }
+// -webkit-autofill { -webkit-box-shadow:0 0 0 500px white inset; }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+// Experiment code
+.ml16 {
+    // color: #402d2d;
+    // padding: 40px 0;
+    // font-weight: 800;
+    // font-size: 2em;
+    // text-transform: uppercase;
+    // letter-spacing: 0.5em;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .dark-green {
+      color: #495142 !important; 
+  }
+
+//   @keyframes slideUpWord {
+//       0% {
+//           opacity: 0;
+//           transform: translateY(100px);
+//       }
+
+//       100% {
+//           opacity: 1;
+//           transform: translateY(0);
+//       }
+//   }
+
+  .animatable {
+        opacity: 0;
+  }
+
+    .word {
+        animation-name: slideUpWord;
+        animation-duration: .4s;
+        animation-fill-mode: both;
+        
+        
+        opacity: 0;
+        display: inline-block;
+        transform: translateY(100px);
+  }
+
+.hideImage {
+    display: none;
+}
+
+.header__logo {
+    cursor: pointer;
+}
+
+
+.cookieLink {
+    color: white;
+}
+.header__logo-box {
+    cursor: pointer;
+}
+.conceptai {
+    width: 9rem;
+    margin-left: .5rem;
+    opacity: 0.7;
+    transition: 0.5s opacity linear;
+}
+
+.conceptai:hover {
+    opacity: 0.9;
+}
+
+.cls-1 {
+    fill: red;
+}

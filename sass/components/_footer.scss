@@ -1,0 +1,62 @@
+.footer {
+    background-color: rgb(230, 230, 230);
+    &__top {
+        font-size: 1.4rem;
+        // background: yellow;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 1rem 0;
+
+        &__inner-container {
+            width: 95%;
+            // background: red;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(204, 204, 204);
+            margin: auto;
+            // padding-bottom: 0.5rem;
+            height: 6rem;
+            align-items: center;
+
+            &__registration {
+                color: rgb(102, 102, 102);
+            }
+
+            &__tel a {
+                color: #09c !important;
+            }
+        }
+
+
+    }
+
+    &__bottom {
+        font-size: 1.4rem;
+        // background: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 1rem 0;
+
+        &__inner-container {
+            width: 95%;
+            // background: red;
+            display: flex;
+            justify-content: space-between;
+            // border-bottom: 1px solid black;
+            margin: auto;
+            height: 6rem;
+            align-items: center;
+
+            &__trademark, &__created-by {
+                color: rgb(153, 153, 153);
+            }
+
+
+        }
+    }
+    
+
+
+}

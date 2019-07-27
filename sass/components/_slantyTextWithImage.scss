@@ -1,0 +1,98 @@
+.textAndImage {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+
+    // height: 150vh;
+    // border-top: 1px solid rgb(200, 200, 200);
+    // border-top: 1px solid black;
+
+    &__heading {
+        width: 60%;
+        font-weight: 600;
+    }
+
+    &__text {
+        width: 50%;
+        // height: 90rem;
+        background-color: white;
+
+        &--right {
+            order: 2;
+        }
+    }
+
+    &__btn:link {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+ 
+    
+    &__image {
+        width: 50%;
+        background-color: red;
+        // height: 90rem;
+        background-size: cover;
+        // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header1.jpg);
+        background-position: top;
+
+
+        img {
+            height: 100%;
+            // width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    
+    &__textContainer {
+       width: 80%;
+       margin: auto;
+       padding: 12rem 4rem;
+    //    padding-top: 17rem;
+    }
+    
+    &__borderedText {
+        border-left: 2px black solid;
+        margin: 1rem 0;
+        padding-left: 2rem;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        margin-bottom: 3rem;
+    }
+    
+    &__paragrah {
+        margin-bottom: 2rem;
+        color: $lightGreyText;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1024px) {
+    .textAndImage {
+        flex-direction: column;
+    
+        
+
+        &__image {
+            width: 100%;
+            height: 70rem;
+            img {
+                height: unset;
+                width: 100%;
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+    
+        &__text--right {
+            order: unset;
+        }
+    
+    }
+
+    
+
+}

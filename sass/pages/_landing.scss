@@ -1,0 +1,232 @@
+
+
+.landing {
+    .nav {
+        &__tel {
+            color: white;
+            font-size: 1.4rem;
+            margin-right: 3rem;
+            //font-family: robotoRegular;
+        }
+    }
+
+    .iconBanner {
+        background-color: transparent;
+
+        &__text {
+            color: white;
+            font-weight: 200;
+            font-family: futuraBook2;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__contactForm {
+        padding-bottom: 8rem;
+        // background-color: #e6e6e6;
+        background-color: $greyBackground;
+
+        text-align: center;
+
+        &__heading {
+            text-align: center;
+            font-size: 3rem;
+            padding: 8rem 0;
+            font-weight: 500;
+        }
+    
+        .formField {
+            width: 100%;
+            height: 40px;
+            border: none;
+            margin-bottom: 5rem;
+            font-size: 1.5rem;
+            padding: 1.3rem;
+        }
+    }
+
+    .header__unblurred-image {
+        transition: 2s opacity;
+    }
+
+    .header__unblurred-image:nth-child(1) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/thumbnail_blagdon tree.jpg');
+    }
+
+    .header__unblurred-image:nth-child(2) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/thumbnail_stoke aerial.jpg');
+    }
+
+    .header__unblurred-image:nth-child(3) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/thumbnail_Woodram-1.jpg');
+    }
+
+    .header__unblurred-image:nth-child(4) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/thumbnail_DSC_0040.jpg');
+    }
+        
+}
+
+.woodramTreeLogo {
+    // height: 27px;
+    // width: 260px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/logoWhite.svg');
+}
+
+.tripleImageBox__image:before {
+    padding-top: 100%;
+}
+
+.tripleImageBox__image {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+
+.tripleImageBox__image:nth-child(1) {
+    margin-left: 2rem;
+}
+
+.tripleImageBox__image:nth-child(3) {
+    margin-right: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .tripleImageBox__image {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .tripleImageBox {
+        margin-right: 2rem;
+    }
+
+    .iconBanner {
+        display: none;
+    }
+}
+.btn--mobile-enquire {
+    display: none !important;
+}
+
+.header__logo--mobile {
+    display: none;
+
+    img {
+        height: 26px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header__logo-box {
+        justify-content: center;
+
+        
+
+    }
+
+    .header__logo--mobile {
+        background-position-x: center;
+    }
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer__top__inner-container {
+        border-bottom: none;
+        flex-direction: column-reverse;
+        height: unset;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .footer__bottom__inner-container {
+        flex-direction: column;
+        height: unset;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+
+
+
+
+
+
+    .header__heading-primary {
+        font-size: 4rem;
+    }
+
+    
+    
+    .header__arrow {
+        // left: calc(50% - 8px);
+        i {
+            padding: 8px;
+        }
+    }
+
+    .btn--enquire--desktop {
+        display: none !important;
+    }    
+
+    .btn--mobile-enquire {
+        display: inline-flex !important;
+    }
+
+    // Hide the phone number for mobile
+    .nav__tel {
+        display: none;
+    }
+
+    .nav__top-bar {
+        justify-content: center;
+    }
+
+    // Hide the desktop logo
+    .header__logo {
+        display: none;
+    }
+    .header__logo--mobile {
+        display: block;
+    }
+}
+
+.submit {
+    margin: 0;
+    width: 10.5rem;
+    height: 4.7rem;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.submitButtonContainer {
+    // text-align: right;
+    width: 80%;
+    margin: auto;
+}
+
+.formFieldContainer {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    top: 47px;
+    display: none;
+    font-size: 1.5rem;
+    color: #742928;
+}
+
+.fas {
+    border: none;
+}

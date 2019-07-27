@@ -1,0 +1,51 @@
+// font-family: 'Gothic A1', sans-serif;
+
+@font-face {
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoLight;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: futuraOblique;
+    src: url(../fonts/Futura_ICG_Book_Oblique.ttf);
+}
+
+
+@font-face {
+    font-family: futuraBook;
+    src: url(../fonts/Futura-SC-T-OT-Book_19037.ttf);
+}
+
+@font-face {
+    font-family: futuraBook2;
+    src: url(../fonts/Futura-T-OT-Book_19064.ttf);
+}
+
+@font-face {
+    font-family: futuraLight;
+    src: url(../fonts/FuturaLightRegular.otf);
+}
+
+
+.header__heading-primary {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.btn:link, .btn:visited {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.iconBanner__container .iconBanner__text {
+    font-size: 2.7rem;
+}
+
+.textAndImage__textContainer {
+    font-size: 2rem;
+}

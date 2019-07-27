@@ -1,0 +1,55 @@
+.iconBanner {
+    
+    width: 100%;
+
+    background-color: rgb(247, 247, 247);
+    
+
+    &__all-icon-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 6rem 0;
+        margin: auto;
+        max-width: 1288px;
+        
+    }
+
+    &--extraWide {
+        width: unset;
+    }
+
+
+    &__container {
+        text-align: center;
+        width: 100%;
+        img {
+            margin-bottom: 2.5rem;
+            height: 100px;
+        }
+        
+    
+        & .iconBanner__text {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .iconBanner__all-icon-container {
+        flex-direction: column;
+    
+        .iconBanner__container:not(:last-child) {
+            margin-bottom: 8rem;
+        }
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .iconBanner {
+        width: 100%;
+    }
+}

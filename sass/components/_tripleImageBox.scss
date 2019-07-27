@@ -1,0 +1,52 @@
+.tripleImageBox {
+    overflow: hidden;
+    // background-color: red;
+    // -webkit-backface-visibility: hidden;
+    //         -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    display: flex;
+    flex-flow: row;
+
+    &__image {
+        width: 33.33%;
+        // background-color: blue;
+        // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header1.jpg);
+        // background-size: cover;
+        // background-position: top;
+        overflow: hidden;
+        position: relative;
+        &:before {
+            content: '';
+            padding-top: 75%;
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            transition: all 1.4s ease;
+            transform: scale(1.4);
+            -webkit-backface-visibility: hidden;
+            // -webkit-transform: translateZ(0) scale(1.0, 1.0);
+            
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .tripleImageBox {
+        flex-direction: column;
+
+        &__image {
+            width: 100%;
+        }
+
+    }
+}
